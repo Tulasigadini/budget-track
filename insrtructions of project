@@ -1,0 +1,116 @@
+Personal Budget Tracker - Recruitment Assessment Submission
+
+Project Overview
+
+The Personal Budget Tracker is a full-stack web application designed to help users manage their finances by tracking income, expenses, and budgets. The application consists of a backend built with Django and Django REST Framework (DRF) and a frontend built with React. It includes user authentication, transaction management, budget tracking, and financial visualizations using D3.js charts.
+
+Features
+
+Authentication: Secure user login using DRF Token Authentication.
+
+Dashboard: Displays a financial summary (total income, expenses, balance) with a D3.js bar chart.
+
+Transaction Management: Add, edit, and delete transactions with categorized entries (e.g., salary, groceries).
+
+Transaction Overview: Lists transactions (10 per page) with pagination and filtering by date, category, and amount.
+
+Budget Management: Set and view monthly budgets, compare against actual expenses using a D3.js chart.
+
+Responsive Design: Mobile-friendly UI with adjusted form widths and compact charts.
+
+Deliverables
+==============
+Hosted Application Links
+=========================
+Frontend: https://budget-frontend-tyvx.onrender.com/
+
+Backend (DRF API): https://budget-track-19hu.onrender.com/
+
+GitHub Repositories
+====================
+Frontend: https://github.com/Tulasigadini/budget-frontend
+
+Backend: https://github.com/Tulasigadini/budget-track
+
+Test Account Credentials To access the platform, please use the following credentials:
+
+Username: testuser
+
+Password: Test@1234
+
+Note: The hosted application will remain accessible for at least 30 days from the submission date (May 04, 2025).
+
+Technologies Used
+
+Backend
+=========
+Django: Web framework for the backend.
+
+Django REST Framework: For building RESTful APIs.
+
+DRF Token Authentication: For secure user authentication.
+
+SQLite: Default database for development (used in deployment).
+
+Frontend
+=========
+
+React: JavaScript library for building the user interface.
+
+Axios: For making HTTP requests to the backend API.
+
+D3.js: For creating financial summary and budget comparison charts.
+
+Font Awesome: For edit and delete icons in the transaction list.
+
+React Router: For client-side routing.
+
+Deployment
+
+Render: payment platform used to host both frontend and backend.
+
+Assumptions and Design Decisions
+
+Authentication: login , Registration functionality is implemented. 
+
+Database: SQLite is used for simplicity in deployment. In a production environment, PostgreSQL would be preferred.
+
+Expenses Filtering: The financial summary and expenses are not month-specific due to backend limitations in the /api/summary/ endpoint. Budgets, however, are month-specific.
+
+Charts: D3.js bar charts are used for the dashboard (income vs. expenses) and budget page (budget vs. expenses).
+
+Pagination: Transactions are limited to 10 per page with Previous/Next buttons for navigation.
+
+Icons: Font Awesome is used for edit (pencil) and delete (trash) icons in the transaction list.
+
+Form Width: Forms are set to a maximum width of 350px (desktop) for a cleaner look, adjusting to 100% on mobile.
+
+Setup Instructions (Optional)
+===============================
+Backend
+=========
+Clone the backend repository: git clone https://github.com/Tulasigadini/budget-track.git cd budget-track
+
+Create a virtual environment and install dependencies: python -m venv venv source venv/bin/activate # On Windows: venv\Scripts\activate pip install -r requirements.txt
+
+Apply migrations: python manage.py migrate
+
+Create a superuser (optional, for admin access): python manage.py createsuperuser
+
+Run the server: python manage.py runserver The API will be available at http://localhost:8000/.
+
+Frontend
+===========
+Clone the frontend repository: git clone https://github.com/Tulasigadini/budget-frontend.git cd budget-frontend
+
+Install dependencies: npm install
+
+Start the development server: npm start The app will be available at http://localhost:3000/.
+
+Note: Ensure the backend is running, and update the API URL in the frontend (axios base URL) if necessary.
+
+Submission Details
+
+Contact: For any queries, I can be reached via email (tskgadini@gmail.com)  phone(8712387892).
+
+Thank you for considering my submission. I look forward to the next steps in the recruitment process!
